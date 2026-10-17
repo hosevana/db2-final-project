@@ -1,6 +1,8 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "runArgs": ["--device=/dev/net/tun"],
   "features": {
+    "ghcr.io/tailscale/codespace/tailscale": {},
     "ghcr.io/devcontainers-extra/features/mongosh-homebrew:1": {},
     "ghcr.io/devcontainers-extra/features/node-asdf:0": {},
     "ghcr.io/devcontainers/features/dotnet:2": {}

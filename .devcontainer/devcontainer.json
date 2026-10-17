@@ -2,7 +2,6 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
     "ghcr.io/devcontainers-extra/features/mongosh-homebrew:1": {},
-    "ghcr.io/devcontainers-extra/features/node-asdf:0": {},
-    "mongodb+srv://github-user:weLoveGithubandMONGODB8@project-cluster.2a5curs.mongodb.net/": {}
+    "ghcr.io/devcontainers-extra/features/node-asdf:0": {}
   }
 }

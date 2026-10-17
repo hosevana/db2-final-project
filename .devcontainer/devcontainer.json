@@ -3,6 +3,6 @@
   "features": {
     "ghcr.io/devcontainers-extra/features/mongosh-homebrew:1": {},
     "ghcr.io/devcontainers-extra/features/node-asdf:0": {},
-    "mongodb+srv://clindsey7266_db_user:xmi1Naxu8QWPBp34@project-cluster.2a5curs.mongodb.net/?appName=project-cluster&compressors=zlib": {}
+    "mongodb+srv://github-user:weLoveGithubandMONGODB8@project-cluster.2a5curs.mongodb.net/?appName=project-cluster&compressors=zlib": {}
   }
 }

@@ -4,7 +4,10 @@
 using MongoDB.Driver;
 using MongoDB.Bson;
 
-const string connectionUri = "mongodb+srv://${{ secrets.SECRET_USERNAME }}:${{ secrets.SECRET_MONGO_PASS }}@project-cluster.2a5curs.mongodb.net/";
+var username = Environment.GetEnvironmentVariable("SECRET_USERNAME");
+var password = Environment.GetEnvironmentVariable("SECRET_MONGO_PASS");
+
+string connectionUri = $"mongodb+srv://{username}:{password}@project-cluster.2a5curs.mongodb.net/";
 
 var settings = MongoClientSettings.FromConnectionString(connectionUri);
 

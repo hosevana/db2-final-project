@@ -3,7 +3,9 @@ Final Project for Integrated Database Systems
 
 ## Connection Instructions
 ### Python:
-  WIP
+  Start a Codespace on Github with this repository.
+  Open the terminal (ctrl-` or ctrl-j) and enter the command ``python -m pip install pymongo``.
+  Run by entering ``python test_py.py`` into the terminal.
 ### C#:
   Start a Codespace on Github with this repository.
   Open the terminal (ctrl-` or ctrl-j) and enter the command ``dotnet add package MongoDB.Driver``.

@@ -1,6 +1,7 @@
-# Created 2026-10-11 by Hosevana 
-# last edited: 2026-10-22
-# add code for connecting to mongodb (UNTESTED)
+# Created 2026-10-11 by hosevana 
+# test code to set up connection to atlas
+# last edited: 2026-10-22 by hosevana
+# CODE WORKING AS OF 2026-10-24
 
 import os
 username = os.environ.get("SECRET_USERNAME")

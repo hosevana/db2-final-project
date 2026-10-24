@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/test_cpp.dir/test_cpp.cpp.o  -o test_cpp  -Wl,-rpath,/usr/local/lib /usr/local/lib/libmongocxx1.so.4.6.1 /usr/local/lib/libbsoncxx1.so.4.6.1 -Wl,-rpath-link,/usr/local/lib 

@@ -1,3 +1,0 @@
-/workspaces/db2-final-project/cpp_CRUD/build/CMakeFiles/rebuild_cache.dir
-/workspaces/db2-final-project/cpp_CRUD/build/CMakeFiles/edit_cache.dir
-/workspaces/db2-final-project/cpp_CRUD/build/CMakeFiles/test_cpp.dir

@@ -1,13 +1,18 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postCreateCommand": "bash .devcontainer/setup-vcpkg.sh",
+  "remoteEnv": {
+    "VCPKG_ROOT": "${userHome}/vcpkg",
+    "PATH": "${userHome}/vcpkg:${containerEnv:PATH}"
+  },
   "features": {
-    "ghcr.io/devcontainers/features/dotnet:2": {},
+    "ghcr.io/devcontainers/features/dotnet:2": {
+      "version": "10.0"
+    },
     "ghcr.io/devcontainers/features/java:1": {
       "version": "none",
       "installMaven": "true",
       "installGradle": "false"
-    },
-    "ghcr.io/devcontainers-contrib/features/ant-sdkman:2": {},
-    "ghcr.io/devcontainers-extra/features/activemq-sdkman:2": {}
+    }
   }
 }

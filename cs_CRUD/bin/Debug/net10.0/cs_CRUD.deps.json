@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "cs_CRUD/1.0.0": {
         "dependencies": {
-          "MongoDB.Driver": "3.13.0",
+          "MongoDB.Driver": "3.14.0",
           "MongoDB.EntityFrameworkCore": "10.0.4"
         },
         "runtime": {
@@ -133,34 +133,34 @@
           }
         }
       },
-      "MongoDB.Bson/3.13.0": {
+      "MongoDB.Bson/3.14.0": {
         "runtime": {
           "lib/net6.0/MongoDB.Bson.dll": {
-            "assemblyVersion": "3.13.0.0",
-            "fileVersion": "3.13.0.0"
+            "assemblyVersion": "3.14.0.0",
+            "fileVersion": "3.14.0.0"
           }
         }
       },
-      "MongoDB.Driver/3.13.0": {
+      "MongoDB.Driver/3.14.0": {
         "dependencies": {
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "10.0.11",
-          "MongoDB.Bson": "3.13.0",
+          "MongoDB.Bson": "3.14.0",
           "SharpCompress": "0.48.1",
           "Snappier": "1.3.1",
           "ZstdSharp.Port": "0.7.3"
         },
         "runtime": {
           "lib/net6.0/MongoDB.Driver.dll": {
-            "assemblyVersion": "3.13.0.0",
-            "fileVersion": "3.13.0.0"
+            "assemblyVersion": "3.14.0.0",
+            "fileVersion": "3.14.0.0"
           }
         }
       },
       "MongoDB.EntityFrameworkCore/10.0.4": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "10.0.11",
-          "MongoDB.Driver": "3.13.0"
+          "MongoDB.Driver": "3.14.0"
         },
         "runtime": {
           "lib/net10.0/MongoDB.EntityFrameworkCore.dll": {
@@ -278,19 +278,19 @@
       "path": "microsoft.extensions.primitives/10.0.11",
       "hashPath": "microsoft.extensions.primitives.10.0.11.nupkg.sha512"
     },
-    "MongoDB.Bson/3.13.0": {
+    "MongoDB.Bson/3.14.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jb4fGQIS1bTFSK2336FP3rBHDQ+UiVKdTAZcoWHeed1xlxvmclnHA8Y4CAQa+Y2KWw3Fz9OIAkXH/KXJL9yRGg==",
-      "path": "mongodb.bson/3.13.0",
-      "hashPath": "mongodb.bson.3.13.0.nupkg.sha512"
+      "sha512": "sha512-JrfJx2od1ly90rECMNC8z58NQtnOd76nzp8osX3nkI/F8DUjf6sp6CtFJhIIMrrNR6qxuRvn1yly6f45GiJZqQ==",
+      "path": "mongodb.bson/3.14.0",
+      "hashPath": "mongodb.bson.3.14.0.nupkg.sha512"
     },
-    "MongoDB.Driver/3.13.0": {
+    "MongoDB.Driver/3.14.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1Ae+OaZRKVsb4KI39tV9rkV48Bth+3pGaEpXVNCu9ueWUF7zVe00GQzK9jjyNDsScIUZJQleHr5ceNaRnWKJqw==",
-      "path": "mongodb.driver/3.13.0",
-      "hashPath": "mongodb.driver.3.13.0.nupkg.sha512"
+      "sha512": "sha512-fQjD3gFTQqEWplOZ66/jCXxvixFEZjlHgDuziPXK7CxMla7n+O9LTxW3KqfN0/mWWYKsBv1vxmsm0qm07smPzA==",
+      "path": "mongodb.driver/3.14.0",
+      "hashPath": "mongodb.driver.3.14.0.nupkg.sha512"
     },
     "MongoDB.EntityFrameworkCore/10.0.4": {
       "type": "package",

@@ -19,11 +19,11 @@ using bsoncxx::builder::basic::make_document;
 
 int main() {
 
-    const std::string db_username = std::getenv("SECRET_USERNAME");
+    const std::string db_username = std::getenv("MONGO_USER");
     if (db_username.length() <= 0) {
         std::cout << "Username not found.\n ";
     }
-    const std::string db_password = std::getenv("SECRET_MONGO_PASS");
+    const std::string db_password = std::getenv("MONGO_PASS");
     if (db_password.length() <= 0) {
         std::cout << "Password not found.\n";
     }
@@ -33,17 +33,10 @@ int main() {
             db_password + "@project-cluster.2a5curs.mongodb.net/");
         mongocxx::client client(uri);
         mongocxx::database db = client["admin"];
-        //auto collection = db["movies"];
 
-        /*auto result = collection.find_one(make_document(kvp("title", "The Shawshank Redemption")));
-        if (result) {
-            std::cout << bsoncxx::to_json(*result) << std::endl;
-        } else {
-            std::cout << "No result found" << std::endl;
-        }*/
-    const auto ping_cmd = bsoncxx::builder::basic::make_document(bsoncxx::builder::basic::kvp("ping", 1));
-    db.run_command(ping_cmd.view());
-    std::cout << "Pinged your deployment. You successfully connected to MongoDB!" << std::endl;
+        const auto ping_cmd = bsoncxx::builder::basic::make_document(bsoncxx::builder::basic::kvp("ping", 1));
+        db.run_command(ping_cmd.view());
+        std::cout << "Pinged your deployment. You successfully connected to MongoDB!" << std::endl;
     } catch (const std::exception& e) {
         std::cout << "Exception: " << e.what() << std::endl;
     }

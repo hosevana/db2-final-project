@@ -1,13 +1,13 @@
 // Created 2026-10-11 by hosevana
 // Test code to setup the git and codespaces
 // Last edited 2026-10-24 by hosevana
-// CODE IS WORKING AS OF 2026-10-24
+// CODE IS WORKING AS OF 2026-11-15
 
 using MongoDB.Driver;
 using MongoDB.Bson;
 
-var username = Environment.GetEnvironmentVariable("SECRET_USERNAME");
-var password = Environment.GetEnvironmentVariable("SECRET_MONGO_PASS");
+var username = Environment.GetEnvironmentVariable("MONGO_USER");
+var password = Environment.GetEnvironmentVariable("MONGO_PASS");
 
 string connectionUri = $"mongodb+srv://{username}:{password}@project-cluster.2a5curs.mongodb.net/";
 

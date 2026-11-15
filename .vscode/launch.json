@@ -6,6 +6,13 @@
             "name": "QuickStart",
             "request": "launch",
             "mainClass": "QuickStart",
+            "projectName": "java-crud"
+        },
+        {
+            "type": "java",
+            "name": "QuickStart",
+            "request": "launch",
+            "mainClass": "QuickStart",
             "projectName": "db2-final-project_678ead87"
         },
         {

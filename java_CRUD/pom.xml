@@ -41,7 +41,7 @@
                 <version>3.13.0</version>
                 <configuration>
                     <includes>
-                        <include>QuickStart.java</include>
+                        <include>test_jv.java</include>
                     </includes>
                 </configuration>
             </plugin>
@@ -50,7 +50,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.5.0</version>
                 <configuration>
-                    <mainClass>QuickStart</mainClass>
+                    <mainClass>test_jv</mainClass>
                 </configuration>
             </plugin>
         </plugins>

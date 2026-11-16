@@ -13,8 +13,8 @@ Final Project for Integrated Database Systems
   Start a Codespace on Github with this repository.
   Open a terminal and enter the following commands to run the C# project: 
   ```sh
-  dotnet add package MongoDB.Driver
   cd cs_CRUD
+  dotnet add package MongoDB.Driver
   dotnet run
   ```
 ### C++:

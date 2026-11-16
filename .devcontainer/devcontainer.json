@@ -2,8 +2,8 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "postCreateCommand": "bash .devcontainer/setup-vcpkg.sh",
   "remoteEnv": {
-    "VCPKG_ROOT": "${userHome}/vcpkg",
-    "PATH": "${userHome}/vcpkg:${containerEnv:PATH}"
+    "VCPKG_ROOT": "${containerEnv:HOME}/vcpkg",
+    "PATH": "${containerEnv:HOME}/vcpkg:${containerEnv:PATH}"
   },
   "features": {
     "ghcr.io/devcontainers/features/dotnet:2": {

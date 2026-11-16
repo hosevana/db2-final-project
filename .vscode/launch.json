@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "test_jv",
+            "request": "launch",
+            "mainClass": "test_jv",
+            "projectName": "java-crud"
+        },
+        {
+            "type": "java",
             "name": "QuickStart",
             "request": "launch",
             "mainClass": "QuickStart",

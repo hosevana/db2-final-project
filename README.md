@@ -24,7 +24,7 @@ Final Project for Integrated Database Systems
   cd cpp_CRUD
   cmake -S . -B build -DCMAKE_TOOLCHAIN_FILE="$HOME/vcpkg/scripts/buildsystems/vcpkg.cmake"
   cmake --build build
-  ./build/test_cpp
+  ./build/main
   ```
 ### Java:
   Start a Codespace on Github with this repository.

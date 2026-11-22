@@ -1,3 +1,6 @@
 {
-    "cmake.sourceDirectory": "/workspaces/db2-final-project/cpp_CRUD"
+    "cmake.sourceDirectory": "/workspaces/db2-final-project/cpp_CRUD",
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    }
 }

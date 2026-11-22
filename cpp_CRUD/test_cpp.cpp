@@ -1,6 +1,8 @@
 // Created (remade) 2026-10-25 by hosevana
 // last edited 2026-11-15 by hosevana
-// NO LONGER ?? WORKING AS OF 2026-11-15
+//  WORKING AS OF 2026-11-22
+// only a test to connect to the database,
+// does not contain real project data
 
 #include <cstdint>
 #include <cstdlib>
@@ -19,14 +21,18 @@ using bsoncxx::builder::basic::make_document;
 
 int main() {
 
-    const std::string db_username = std::getenv("MONGO_USER");
-    if (db_username.length() <= 0) {
-        std::cout << "Username not found.\n ";
+    const char* username = std::getenv("MONGO_USER");
+    const char* password = std::getenv("MONGO_PASS");
+    if (username == nullptr || username[0] == '\0') {
+        std::cerr << "MONGO_USER is not set.\n";
+        return 1;
     }
-    const std::string db_password = std::getenv("MONGO_PASS");
-    if (db_password.length() <= 0) {
-        std::cout << "Password not found.\n";
+    if (password == nullptr || password[0] == '\0') {
+        std::cerr << "MONGO_PASS is not set.\n";
+        return 1;
     }
+    const std::string db_username(username);
+    const std::string db_password(password);
     try {
         mongocxx::instance instance{};
         const mongocxx::uri uri("mongodb+srv://" + db_username + ":" + 

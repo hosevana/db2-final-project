@@ -39,14 +39,11 @@
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: g++ build active file",
-            "command": "/usr/bin/g++",
+            "label": "C++: configure and build",
+            "command": "bash",
             "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "-lc",
+                "cmake -S cpp_CRUD -B cpp_CRUD/build -DCMAKE_TOOLCHAIN_FILE=\"$HOME/vcpkg/scripts/buildsystems/vcpkg.cmake\" && cmake --build cpp_CRUD/build"
             ],
             "options": {
                 "cwd": "${fileDirname}"

@@ -2,8 +2,8 @@
 // Test code to setup the git and codespaces
 // Last edited 2026-10-24 by hosevana
 // CODE IS WORKING AS OF 2026-11-15
-
-using MongoDB.Driver;
+// code commented out for documentation, does not need to be run
+/*using MongoDB.Driver;
 using MongoDB.Bson;
 
 var username = Environment.GetEnvironmentVariable("MONGO_USER");
@@ -22,4 +22,4 @@ try {
     Console.WriteLine("Pinged your deployment. You successfully connected to MongoDB!");
 } catch (Exception ex) {
     Console.WriteLine(ex);
-}
+}*/

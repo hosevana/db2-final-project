@@ -43,7 +43,7 @@
             "command": "bash",
             "args": [
                 "-lc",
-                "cmake -S cpp_CRUD -B cpp_CRUD/build -DCMAKE_TOOLCHAIN_FILE=\"$HOME/vcpkg/scripts/buildsystems/vcpkg.cmake\" && cmake --build cpp_CRUD/build"
+                "cmake -S cpp_CRUD -B cpp_CRUD/build -DCMAKE_TOOLCHAIN_FILE=\"$HOME/vcpkg/scripts/buildsystems/vcpkg.cmake\" && cmake --build cpp_CRUD/build --target main_cplusplus"
             ],
             "options": {
                 "cwd": "${fileDirname}"

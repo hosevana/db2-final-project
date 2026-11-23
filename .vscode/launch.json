@@ -3,24 +3,11 @@
     "configurations": [
         {
             "type": "java",
-            "name": "test_jv",
+            "name": "main_java",
             "request": "launch",
-            "mainClass": "test_jv",
-            "projectName": "java-crud"
-        },
-        {
-            "type": "java",
-            "name": "QuickStart",
-            "request": "launch",
-            "mainClass": "QuickStart",
-            "projectName": "java-crud"
-        },
-        {
-            "type": "java",
-            "name": "QuickStart",
-            "request": "launch",
-            "mainClass": "QuickStart",
-            "projectName": "db2-final-project_678ead87"
+            "mainClass": "main_java",
+            "projectName": "java-crud",
+            "cwd": "${workspaceFolder}/java_CRUD"
         },
         {
             "name": ".NET Core Launch (console)",

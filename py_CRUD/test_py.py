@@ -17,4 +17,13 @@ async def main():
     print("Connected successfully")
     await client.close()
 
+def create(self):
+    pass
+def read(self):
+    pass
+def update(self):
+    pass
+def read(self):
+    pass
+
 asyncio.run(main())

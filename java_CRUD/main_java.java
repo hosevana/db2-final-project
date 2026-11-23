@@ -8,17 +8,33 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
-public class test_jv {
+public class main_java {
     public static void main(String[] args) {
         String db_username = System.getenv("MONGO_USER");
         String db_password = System.getenv("MONGO_PASS");
         String uri = "mongodb+srv://" + db_username + ":" + db_password 
         + "@project-cluster.2a5curs.mongodb.net/";
-        try (MongoClient mongoClient = MongoClients.create(uri)) {
-            MongoDatabase database = mongoClient.getDatabase("sample_guides");
-            MongoCollection<Document> collection = database.getCollection("planets");
-            Document doc = collection.find(new Document("name", "Neptune")).first();
-            System.out.println(doc != null ? doc.toJson() : "No matching documents found.");
+        try (MongoClient mongoClient = MongoClients.create(uri))
+        {
+            mongoClient.getDatabase("admin")
+                .runCommand(new Document("ping", 1));
+            System.out.println("Connected to MongoDB");
         }
+    }
+    public static void create()
+    {
+        return;
+    }
+    public static void read()
+    {
+        return;
+    }
+    public static void update()
+    {
+        return;
+    }
+    public static void delete()
+    {
+        return;
     }
 }
